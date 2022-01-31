@@ -5,6 +5,7 @@
   import L from 'leaflet'
   console.log(stadiums)
   import Stadiums from './Stadiums.svelte'
+  import Table from './Table.svelte'
 
   onMount(() => {
     // addMap()
@@ -79,6 +80,8 @@
   <!-- <div id="map" /> -->
 
   <Stadiums />
+
+  <Table />
 </main>
 
 <style>

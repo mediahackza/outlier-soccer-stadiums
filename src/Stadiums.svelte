@@ -3,6 +3,7 @@
   import { stadiums } from '../stadiums.js'
   import { stadiumsFull } from '../stadiums-full.js'
 
+  let width = 600
   let x = -1000
   let y = -1000
   let name = ''
@@ -101,7 +102,7 @@
 
 <div class="map">
   <svg
-    width="629"
+    {width}
     height="557"
     viewBox="0 0 629 557"
     fill="none"
@@ -847,7 +848,6 @@
     </table>
   </div>
 </div>
-<div class="spacer">&nbsp;</div>
 
 <style>
   .spacer {
@@ -879,11 +879,12 @@
     pointer-events: none;
   }
   .map {
-    width: 600px;
+    width: 100%;
     position: relative;
     /* border: solid 1px red; */
     margin-left: auto;
     margin-right: auto;
+    max-width: 900px;
   }
   .map svg {
     width: 100%;
