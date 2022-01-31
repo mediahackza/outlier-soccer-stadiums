@@ -873,7 +873,7 @@
   table {
     font-size: 0.8rem;
     border-collapse: collapse;
-    width: 100%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     max-width: 900px;
